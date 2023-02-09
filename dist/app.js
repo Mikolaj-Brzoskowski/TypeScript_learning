@@ -1,5 +1,6 @@
+import { Category } from './types/types.js';
 console.log("Hello World!");
-const categories = ["important", "done", "low priority"];
+const categories = [Category.IMPORTANT, Category.DONE, Category.LOW_PRIORITY];
 let age = 22;
 let stringAge = "dwadzieścia dwa";
 stringAge = `${age}`;
@@ -28,18 +29,17 @@ const pElement = document.createElement("p");
 const listElement = document.createElement("ul");
 let selectedCategory;
 const renderSelected = () => {
-    console.log(selectedCategory);
     pElement.innerText = `Selected category: ${selectedCategory}`;
     categoriesList.appendChild(pElement);
 };
 const handleCategoryChange = (category) => {
-    if (category === "done") {
+    if (category === Category.DONE) {
         document.body.style.background = "green";
     }
-    else if (category === "important") {
+    else if (category === Category.IMPORTANT) {
         document.body.style.background = "red";
     }
-    else if (category === "low priority") {
+    else if (category === Category.LOW_PRIORITY) {
         document.body.style.background = "yellow";
     }
     else {
@@ -70,4 +70,3 @@ const render = () => {
     categoriesList.appendChild(listElement);
 };
 render();
-export {};
