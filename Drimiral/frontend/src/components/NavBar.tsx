@@ -7,8 +7,7 @@ export interface NavBarProps {
 
 const NavBar: React.FC<NavBarProps> = () => {
 return ( 
-    <div>
-        <Navbar bg="dark" variant="dark" sticky="top" className="top-0">
+        <Navbar bg="dark" variant="dark" sticky="top">
         <Container className={"m-0"}>
           <Navbar.Brand>
           <img
@@ -17,7 +16,8 @@ return (
               height="40"
               className="d-inline-block align-top"
               alt="Drimiral logo"
-            /></Navbar.Brand>
+            />
+            </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Main Page</Nav.Link>
             <NavDropdown title="Features" id="collasible-nav-dropdown">
@@ -31,7 +31,7 @@ return (
           </Nav>
         </Container>
       </Navbar>
-    </div> );
+    );
 }
 
 export default NavBar;
