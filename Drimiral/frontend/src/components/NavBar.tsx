@@ -19,7 +19,7 @@ return (
             />
             </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Main Page</Nav.Link>
+            <Nav.Link href="home">Main Page</Nav.Link>
             <NavDropdown title="Features" id="collasible-nav-dropdown">
               <NavDropdown.Item href="journal">Dreams Journal</NavDropdown.Item>
               <NavDropdown.Divider />
