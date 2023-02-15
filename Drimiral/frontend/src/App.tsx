@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import Contact from "./components/Contact";
 import Journal from "./components/Journal";
-import MainPage from "./components/MainPage";
+import MainPage from "./components/MainPage/MainPage";
 import Music from "./components/Music";
 import NavBar from "./components/NavBar";
 import SleepSummary from "./components/SleepSummary";

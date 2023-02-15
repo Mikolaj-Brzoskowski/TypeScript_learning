@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { text } from "../lorem_ipsum"
+import MainPageContainer from "./MainPageContainer";
+
 
 export interface User {
     name: string;
@@ -21,11 +22,14 @@ const MainPage: React.FC<MainPageProps> = ({ isLogged }) => {
         
       }
     }, []);
+
+    const rowNum: number = 2;
+    const colNum: number = 3;
     
     return ( 
     <div>
-        Welcome to Main Page {user?.name}!
-        {text}
+        Welcome to Drimiral!
+        <MainPageContainer/>
     </div> );
 }
  
