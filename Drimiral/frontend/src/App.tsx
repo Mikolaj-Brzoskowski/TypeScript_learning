@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Journal from "./components/Journal";
 import MainPage from "./components/MainPage/MainPage";
 import Music from "./components/Music";
@@ -19,6 +20,7 @@ const App: React.FC = () => {
       <Route path="/summary" element={<SleepSummary/>} />
       <Route path="/contact" element={<Contact/>} />
     </Routes>
+    <Footer/>
   </div>)
 
 };

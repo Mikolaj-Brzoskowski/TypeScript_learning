@@ -25,7 +25,6 @@ const MainPage: React.FC<MainPageProps> = ({ isLogged }) => {
 
     return ( 
     <div>
-        Welcome to Drimiral!
         <MainPageContainer/>
     </div> );
 }
