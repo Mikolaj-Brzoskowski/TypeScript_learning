@@ -23,9 +23,6 @@ const MainPage: React.FC<MainPageProps> = ({ isLogged }) => {
       }
     }, []);
 
-    const rowNum: number = 2;
-    const colNum: number = 3;
-    
     return ( 
     <div>
         Welcome to Drimiral!
