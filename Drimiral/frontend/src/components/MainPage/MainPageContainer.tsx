@@ -15,18 +15,20 @@ const containerFabric = (rowNum: number, colNum: number): React.ReactElement =>
     }
     for (let i = 0; i < rowNum; i++) {
         rowContainer.push(
-        <Row key={`row-${i}`}>
+        <Row key={`row-${i}`} className="m-2">
             {colContainer}
         </Row>);
     }
     return (
-        <Container>
-            <Row>
-                <Col>
+        <Container fluid>
+            <Row className="justify-content-md-center m-2">
+                <Col md={7}>
                     <MainPageSlides/>
                 </Col>
             </Row>
-            {rowContainer}
+            <div id="about">
+                {rowContainer}
+            </div>
         </Container>
     )
 } 
